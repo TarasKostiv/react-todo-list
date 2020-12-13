@@ -1,0 +1,66 @@
+.App{
+  background-color: #282c34;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.Component{  
+  box-shadow: 0px 0px 13px 0px rgb(0, 0, 0);
+  border-radius: 6px;
+  padding: 30px;
+
+  button{
+    border: 1px solid white;
+    border-radius: 4px;
+    background: none;
+    color: white;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 5px;
+   }
+}
+
+.ToDoList{
+  color: white;
+  width: 700px;
+  min-width: 300px;
+  height: 600px;
+  min-height: 200px;
+  overflow: auto;
+  position: relative;
+
+
+  ._checked{
+    text-decoration: line-through;
+    opacity: 0.3;
+  }
+
+  li{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    list-style-type: '\226B';
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  transition: all .3s;
+}
+
+::-webkit-scrollbar-track {
+  background: #282c34;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(20, 20, 20);
+  border-radius: 6px;
+  &:hover{
+    background: #000;
+  }
+}
