@@ -46,13 +46,13 @@ export default class ToDoList extends Component {
     return (
       <div className="ToDoList Component">
         <form onSubmit={this.submit}>
-          <input value={this.state.input} onChange={this.inputChange} />
-          <button type="submit">Add</button>
+          <input className={'text__input'} value={this.state.input} onChange={this.inputChange} />
+          <button type="submit">&#43; Add</button>
         </form>
 
         <ul>
           {this.state.items.map((item, index) => (
-            <li key={index}><input type="checkbox" onClick={this.checkTask} /> {item} <button onClick={this.deleteTask}>Delete</button></li>
+            <li key={index}><input type="checkbox" onClick={this.checkTask} /> {item} <button onClick={this.deleteTask}>&#215; Delete</button></li>
           ))}
         </ul>
       </div>
