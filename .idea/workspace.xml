@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d2fe717-c078-49c1-b28f-130c8ad9f0b0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,8 @@
       <workItem from="1607963665330" duration="174000" />
       <workItem from="1607967120506" duration="2584000" />
       <workItem from="1607969731938" duration="7000" />
-      <workItem from="1607970433331" duration="455000" />
+      <workItem from="1607970433331" duration="1047000" />
+      <workItem from="1608050311617" duration="62000" />
     </task>
     <servers />
   </component>
