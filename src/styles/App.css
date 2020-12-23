@@ -1,10 +1,19 @@
 .App {
   background-color: #282c34;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px;
 }
 
@@ -13,10 +22,12 @@
 }
 
 .Component {
-  box-shadow: 0px 0px 13px 0px black;
+  -webkit-box-shadow: 0px 0px 13px 0px black;
+          box-shadow: 0px 0px 13px 0px black;
   border-radius: 6px;
   padding: 30px;
 }
+
 .Component button {
   border: 1px solid white;
   border-radius: 4px;
@@ -27,6 +38,18 @@
   padding-top: 2px;
   padding-bottom: 2px;
   margin-left: 5px;
+  cursor: pointer;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+}
+
+.Component button:hover {
+  background-color: white;
+  color: #282c34;
+}
+
+.Component label {
+  cursor: text;
 }
 
 .ToDoList {
@@ -38,22 +61,27 @@
   overflow: auto;
   position: relative;
 }
+
 .ToDoList ._checked {
   text-decoration: line-through;
   opacity: 0.3;
 }
+
 .ToDoList ul {
   padding-left: 20px;
 }
+
 .ToDoList li {
   margin-top: 7px;
   margin-bottom: 7px;
   list-style-type: none;
 }
+
 .ToDoList .text__input, .ToDoList ._checkbox__input {
   border: #282c34 1px solid;
   border-radius: 4px;
 }
+
 .ToDoList .text__input {
   padding: 3px;
   font-size: 1em;
@@ -61,7 +89,8 @@
 
 ::-webkit-scrollbar {
   width: 4px;
-  transition: all 0.3s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 ::-webkit-scrollbar-track {
@@ -72,8 +101,7 @@
   background: #141414;
   border-radius: 6px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #000;
 }
-
-/*# sourceMappingURL=App.css.map */
